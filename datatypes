@@ -1,0 +1,29 @@
+Datatypes:
+1.Dynamic type language
+Two types:
+1. Primitive data types
+2. Non-primitive data types: Object , arrays
+ To check the data type – typeOf
+Primitive data types: predefined ;  we can store only single values
+1.Numbers: integers , floats.
+2. String : Stream of characters enclosed in quotes
+---single , double ,backtick quotes ;
+Single and double quotes 
+3.Boolean : true or false
+4. Null: empty value or no value
+5.Undefined : ----daclared variable with no value
+ 
+Loops enable the execution of a block of code repeatedly, while conditional statements control the flow of a program based on specified conditions.
+Condition: An expression that evaluates the result(true or false)
+Console.log(5>4)
+Conditional statement: to male the set of instruction s it will execute when the conditional statement is true.
+Block of code(conditional block):  set of instructions
+… when this block of code will execute , it will execute when the specified condition is true
+
+Indentation: {
+                     -------block of code
+                         }
+
+If : only possible
+elseif : #
+else 
