@@ -1,0 +1,65 @@
+// const a = "Yamini"
+        // for(let i in a){
+        //     console.log(a[i])
+        // }
+        
+        // const a = ["yamini","archana","adithya"]
+        // for(i in a){
+        //     console.log(i)
+        // }
+
+        // let i = 2 ; n = 8
+        // while(i<=n){
+        //     console.log(i-2)
+        //     i=i+2
+        // }
+
+        // let c = 0
+        // do{
+        //     console.log("count is:"+c)
+        //     c++
+        // } while(c<5);
+
+        // for(let i = 1;i<=8;i=i+2){
+        //     if(i>=4){
+        //         break
+        //     }console.log(i)
+        // }
+
+        for(let i=1;i<=8;i=i+1){
+            if(i>=4){
+                continue
+            }console.log(i)
+        }
+
+
+Const a =  “ramya”
+For(let i in a){
+Console.log(
+}
+While loop:
+While(condition){
+Block of code
+}
+
+Ex: 1-5
+Let i = 1, n=5;
+While(i<=n){
+//1<=n;2<=5;3<=5;4<=5;5<=5
+Console.log(i+1)
+i=i+1  #updation
+
+do while:
+syntax:
+do{
+//block of code
+} while (condition)  #false
+In do while loop , if the condition is wrong even It will execute atleast one time 
+
+
+Break and continue:
+Matches it will stop
+Example:
+For(let i = 1;i<=5;i=i+2){
+
+        
