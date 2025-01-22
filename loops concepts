@@ -1,0 +1,38 @@
+ // for(let i = 1;i<=8;i=i+2){
+        //     if(i>=4){
+        //         break
+        //     }console.log(i)
+        // }
+
+        // for(let i=1;i<=8;i=i+1){
+        //     if(i==5){
+        //         continue
+        //     }
+        //     console.log(i)
+        // }
+        // for(let i=1;i<=8;i=i+2){
+        //     if(i>5){
+        //         continue
+        //     }
+        //     console.log(i)
+        // }
+Nested Loops: A loop inside the another loop
+The inner loop will execute one time for each iteration of outer loop 
+An inner loop within the repeating block of outer loop
+
+// for (let i=1;i<=3;i++){
+        //     document.write(i,"<br>")
+        //     //innerloop
+        // for (let j=1;j<=4;j++){
+        //     document.write(j," ")    
+        // } 
+        // document.write("<br>")   
+        // }
+        let i,j;
+        for( i=1; i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+       
