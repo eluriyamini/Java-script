@@ -1,0 +1,44 @@
+Functions:
+A function is a reusable block of code
+It can be call any where in the program.
+Reusable code :using an  existing code without writing it ever we need.  
+We can use the same code with different arguments to get the results.
+JS:  
+Keyword = function
+( )
+Parameters = values(variables) which are declared inside the ( )
+while defining the function
+Arguments: values which are passed through the parameters
+
+Function with parameters:
+
+function greet(){
+            console.log("Hello Yamini")
+        }
+        greet()
+        console.log("Hi Archana")
+        greet()
+        console.log("Hi adithya")
+        greet()
+
+        function g(name){
+            console.log("Hello " + name)
+        }
+        let name = prompt("Enter your name: ")
+        g(name)
+
+        function add(a,b){
+            console.log(a+b)
+        }
+        let a=parseInt(prompt("enter number a:"))
+        let b=parseInt(prompt("enter number b:"))
+        add(a,b)
+
+        function a(aa,bb){
+            return aa+bb
+        }
+        let n1 = parseFloat(prompt("Enter number 1:"))
+        let n2 = parseFloat(prompt("Enter number 2:"))
+        let result = 
+        a(aa,bb)
+
