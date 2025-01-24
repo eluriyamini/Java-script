@@ -1,0 +1,75 @@
+Arrows Functions:
+--Es6 version 
+--more readable and more structure.
+--anonymous functions(lambda functions).
+--without function name but they are assigned to a variable.
+
+Example:
+Arrow functions without parameter:
+let c=()=>{
+console.log(“Hi Charan”)
+}
+c()
+
+Arrow functions with parameter:
+Example:
+let x=(x,y)=>{
+console.log(x+y)
+}
+x(20,30)
+x(40,50)
+
+Example:
+Arrow function with one argument:
+#without using parenthesis
+let greet = x=>console.log(x);
+greet(“hello”)
+
+example:
+Arrow function with out argument:
+let greet = ( ) => console.log(“Hello”)
+greet( )
+
+Example: Arrow functions as an expression
+let 18;
+(condition)
+let welcome =(age<18)?
+( )=>console.log(“Yamini”)
+( )=>console.log(“Archana”)
+welcome( )
+Javascript callbacks:
+A callback function is a function that is passed argument to another function;
+
+#functions
+#oops
+#
+function greet(name,callback){
+console.log(“Hello,${name}!’
+callback();
+//this calls the callback function after greeting 
+}
+function sayGoodbye(){
+console.log(“GoodBye”)
+}
+//call the greet and pass say goodbye as the callback
+greet(“sam”,sayGoodBye)
+}
+Promise:
+--eventual completion
+Three states
+1)Pending  : --still not completed  --continuing 
+2)Fullfilled : -- task completed 
+3)
+Example:
+let myPr
+
+
+
+
+
+
+
+
+
+
+
