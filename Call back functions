@@ -1,0 +1,66 @@
+Callback function:
+--You can pass the callback function as an argument to another function
+Execution: The  function receiving the callbsck will execute the callback at somepoint during execution (aften at the end or after an asynchronous operation is done
+Example: 
+function mainfunction(callback){
+console.log(“Execution main function”);
+callback()
+//here we call the callback function
+}
+function callbackFunction(){
+console.log(“callback function executed”)
+}
+mainfunction(callbackFunction);
+
+exp:
+mainfunction takes a parameter callback
+callback function is passed as an argument to mainfunction
+inside the mainfunction, the callback function
+
+--output
+mainfunction(callback function);
+it will execute the code inside the mainfunction-
+it will print(“Executing main function”);
+then it reaches to callback ();where it call the function which is passes to mainfunction(callback function).
+
+Example:2
+passing a named function as a callback;
+function greet(name,callback
+
+Ex4:
+Asychronous callback with setTimout:
+function fetchDat(callback){
+console.log(“Fetching data…”)
+setTimeout(function()){
+console.log(“Data fetched”);
+callback();
+},2000);
+}
+
+function processData(){
+console.loh(“Processing the fetching data..”)
+}
+fetchData(processData);
+Ex 5:
+using a callback with array methods (map)
+code
+const numbers=[1,2,3,4,5]
+const d = numbers.map(function(num){
+return num*2
+})
+Console.log(d)
+Ex: map() is a built in array method that callback function to process each item in array.
+The callback here doubles each number (num*2) and will result a new array with doubled values.
+
+User registration Scenario based:
+Ex:
+function registration (username ,email ,callback ){
+console.log(“registering user:” +username);
+setTimeout(function(){
+console.log(“user”+username  + “registered successfully”);
+callback(email);
+},2000);
+}
+function sendWelcomeEmail(email){
+});
+registerUser
