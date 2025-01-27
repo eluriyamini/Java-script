@@ -1,0 +1,53 @@
+ Promise:
+-- A promise a special javascript object that represents the eventual complention (or failure) of an asynchronous operation.
+It allows to handle asynchronous tasks more efficiently than callbacks
+
+THREE STATES:
+1.Pending : The initial state , the promise is still waiting for the operation to finish.
+2.Fullfilled: The operation completed successfully.
+3.Rejected: The operation failed; 
+
+Exp:
+1) To create a promise-new promise()
+Two parameters-
+resolve  --to mark the promise as successfully 
+reject -mark it as failed 
+
+2) Handling the result :
+.then() method is called when promise is fullfiled .
+It will receives the result from resolve()
+.catch() method is called if the promise is rejected 
+it receives the error message from reject()
+// let mypromise = new Promise((resolve,reject)=>{
+        // let success = true;
+        // if(success){
+        //     resolve("The operation is successfull")
+        // }else{
+        //     reject("The operation failed")
+        // }
+        // });
+        // mypromise.then(result=>{
+        //     console.log(result);
+        // });
+        // mypromise.catch(error=>{
+        //     console.log(error);
+        // });
+
+        // let mypromise = new Promise((resolve,reject)=>{
+        //     resolve(5);
+        // });
+        // mypromise.then(result=>{
+        //     document.write(result);
+        //     return result*2;
+        // })
+        // .then(result=>{
+        //     document.write(result);
+        //     return result+3
+        // })
+        // .then(result=>{
+        //     document.write(result);
+        //
+        // .catch(error=>{
+        //     document.write(error);
+        // }
+        // )
