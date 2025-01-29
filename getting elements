@@ -1,0 +1,80 @@
+1) Getting an Element by id:
+
+getElementByClassName():
+returns all the elements having the same class name
+getElementByClassName() returns an html collection object 
+an html collection 
+
+Getting elements by Tagname:
+getElementByTagName():
+--This method takes a tag name as string and returns an html collection object.
+-- each element loops.
+
+Getting elements by using querySelector metehod:
+the document query selector method select an html elements by tagName, by id ,class name
+QuerySelector: Can be used to select html element by itsbtagname , by id, class name , it selects the first element 
+
+Python;java;
+1)
+QueryselectorAll:
+--it selects all the html elements by its class name and tagname.
+Manipulating Elements:
+To create html elements:
+createElement() -
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="aa" class="a">Iam Aditya</h1>
+    <h1 id="b" class="b">Iam Bannu</h1>
+    <h1 id="c" class="a">Iam Hari</h1>
+    <h1 class="a">Iam Pavan</h1>
+    <h2 class="a">Iam Dhansuh</h2>
+    
+    <script>
+        let x=document.querySelector('a')
+        console.log(x)
+      
+      let elementById = document.getElementById('h1');
+      console.log(elementById); 
+    
+     
+      let elementsByClass = document.getElementsByClassName('a');
+      console.log(elementsByClass); 
+      
+      
+      for (let i = 0; i < elementsByClass.length; i++) {
+        console.log(elementsByClass[i]); 
+      }
+    
+      let elementsByTag = document.getElementsByTagName('h1');
+      console.log(elementsByTag); 
+      
+      
+      for (let i = 0; i < elementsByTag.length; i++) {
+        console.log(elementsByTag[i]); 
+      }
+    
+      
+      let x = document.getElementsByClassName('x');
+      console.log(x); 
+      
+      
+      for (let i = 0; i < x.length; i++) {
+        console.log(x[i]); 
+      }
+      
+    </script>
+    
+</script>
+
+    </script>
+</body>
+</html>
