@@ -1,0 +1,43 @@
+</script> --> 
+
+
+<div id="a">
+  <h1 id="s">poojitha</h1>
+  <h1 id="r">archana</h1>
+  
+ </div> 
+ <div id="b">
+ <h2>sam</h2>
+  <h2>ram</h2>
+ </div>
+  <script>
+          // let n = document.createElement("h2")//
+          // n.textContent="Poojitha"//
+      // let n = document.createElement("h2")
+      // n.innerText="Yamini"
+      // let p = document.getElementById('a')
+      // let i = document.getElementById('s')
+      // p.insertBefore(n,i)
+      // console.log(p)
+      // let b=document.getElementId("s")
+      // b.remove()
+
+      //  let n = document.getElementId("a")
+      //  let l=document.getElementId("s")
+      //  console.log(n,l)
+
+      let n = document.createElement
+      p.replaceChildren
+  </script>
+
+      
+</body>
+DOM:
+1)Create a new element (Single, multiple)
+2)Append a element inside the parent node 
+Add the element at the end
+3)InsertBefore (): insert a new node before an existing node or child node of a specific parent node.
+---this requires a reference to both the new node and the existing node you want to insert before.
+
+
+</html>
