@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Assessment:scenario 1
+        // let a = parseInt(prompt("Enter your Age:"));
+        // let b = prompt("Are you a citizen of India (yes/no):");
+        // let c = prompt("Did you pass the citizenship test (yes/no):");
+
+        // if (a >= 18 && b.toLowerCase() === "yes" && c.toLowerCase() === "yes") {
+        //     document.write("You are eligible to vote.");
+        // } else {
+        //     document.write("You are not eligible to vote.");
+        // }
+
+        // Scerario 2:
+        // let discountCode = "SAVE10"; 
+        // let totalAmount = 100;  
+        // if (discountCode === "SAVE10") {
+        //     totalAmount -= totalAmount *0.01
+        //     console.log("Discount applied: 10%");
+        // } else if (discountCode === "SAVE20") {
+        //     totalAmount -= totalAmount * 0.20; 
+        //     console.log("Discount applied: 20%");
+        // } else if (discountCode === "WELCOME") {
+        //     totalAmount -= totalAmount * 0.15;
+        //     console.log("Discount applied: 15%");
+        // } else {
+        //     console.log("Invalid discount code");
+        // }
+        // console.log("Total after discount: $" + totalAmount.toFixed(2));
+        
+
+
+
+    </script>
+</body>
+</html>
+
+
+React JS Introduction: 2024
+>React is a javascript library for creating ser interfaces.
+> [library : predefined code]
+>A user interface is the point of interface between users and a computer systems including elements like buttons ,menus, and visual layouts that facilitate navigation and control.
+>>Its commonly used to build single page application
