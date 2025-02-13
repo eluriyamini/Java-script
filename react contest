@@ -1,0 +1,90 @@
+// function App() {
+//   // the data  we want to share with user4
+//   const data = "Hello i am Yamini Eluri";
+//   return (
+//     <DataContext.Provider value={data}>
+//       <User1 />
+//     </DataContext.Provider>
+//   );
+// }
+// // user1 compomnent
+// function User1({ data }) {
+//   return <User2 />;
+// }
+// function User2({ data }) {
+//   return <User3 />;
+// }
+// function User3({ data }) {
+//   return <User4 />;
+// }
+// function User4() {
+//   const data = useContext(DataContext);
+//   return <div>{data}</div>;
+// }
+// export default App;
+
+Assignment:
+React Assignment on react Context:
+Imagine you are building an app that displays the details of a users profile. The data about the user invludes the name and the email .The app componenet will pass this user data to adeeply nested child componenet calld profile .
+in this assignment you will :
+1. use prop drilling to pass the data from app to profile.
+2. Use react context to pass the data directly to profilw without going through each component .
+
+
+import React, { createContext, useContext } from "react";
+
+// User Data
+const user = {
+  name: "Yamini",
+  email: "yaminieluri@gmail.com",
+};
+
+// --- Prop Drilling Approach ---
+const Profile = ({ user }) => (
+  <div>
+    <h2>Profile</h2>
+    <p>Name: {user.name}</p>
+    <p>Email: {user.email}</p>
+  </div>
+);
+
+const MiddleComponent = ({ user }) => <Profile user={user} />;
+
+const AppWithProps = () => <MiddleComponent user={user} />;
+
+// --- React Context Approach ---
+const UserContext = createContext();
+
+const ProfileWithContext = () => {
+  const user = useContext(UserContext);
+  return (
+    <div>
+      <h2>Profile (Using Context)</h2>
+      <p>Name: {user.name}</p>
+      <p>Email: {user.email}</p>
+    </div>
+  );
+};
+
+const MiddleComponentWithContext = () => <ProfileWithContext />;
+
+const AppWithContext = () => (
+  <UserContext.Provider value={user}>
+    <MiddleComponentWithContext />
+  </UserContext.Provider>
+);
+
+// Main App Component to render both approaches
+export default function App() {
+  return (
+    <div>
+      <h1>Prop Drilling vs Context</h1>
+      <h3>Using Prop Drilling:</h3>
+      <AppWithProps />
+      <h3>Using React Context:</h3>
+      <AppWithContext />
+    </div>
+  );
+}
+
+
